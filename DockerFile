@@ -1,0 +1,5 @@
+#Base image specify
+FROM ubuntu:latest
+RUN apt-get update  && apt-get install -y git
+CMD ["echo","Hello from docker"]
+COPY ritu.txt  /src/ritusexy.txt
